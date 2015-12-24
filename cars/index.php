@@ -6,7 +6,7 @@
  * Time: 21:26
  */
 
-require 'CCars.php';
+require_once 'CCars.php';
 
 $speed = new CCars("Audi", 200, "sedan", 4);
 $speed-> calculation(10,2);
@@ -19,5 +19,6 @@ $speed->set_body_type("cabriolet");
 $speed->set_car_model("BMW");
 $speed->set_max_speed(320);
 $speed->set_wheels(8);
+
 $speed->calculation(500, 2);
 $speed->print_res();
